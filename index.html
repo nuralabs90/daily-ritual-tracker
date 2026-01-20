@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Ritual Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Daily Ritual Tracker</h1>
+        <p class="sub">Track habits. Build streaks. Keep it simple.</p>
+      </header>
+
+      <section class="card">
+        <form id="ritualForm" class="row">
+          <input
+            id="ritualInput"
+            type="text"
+            placeholder="Add a ritual (e.g., '10 min putting')"
+            autocomplete="off"
+            maxlength="50"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+
+        <div class="meta">
+          <span id="todayLabel"></span>
+          <button id="resetTodayBtn" class="link" type="button">Reset today</button>
+        </div>
+
+        <ul id="ritualList" class="list"></ul>
+      </section>
+
+      <footer class="footer">
+        <small>Built by you. Data stored locally in your browser.</small>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
